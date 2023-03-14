@@ -9,7 +9,7 @@ function getRandomMessage() {
   const keys = Object.keys(myObject); 
   const randomIndex = Math.floor(Math.random() * keys.length); // 0, 1, 2
   const randomKey = keys[randomIndex]; 
-  let message = "";
+  let message = ""; // will concatenate
 
   switch (randomKey) {
     case "jackpot":
@@ -32,10 +32,10 @@ function getRandomMessage() {
 
 // console.log(getRandomMessage());
 
-// this function is triggered onclick
+// this function is triggered from html
 function displayRandomMessage() {
   const messageElement = document.getElementById("message"); // grab element
-  messageElement.innerText = getRandomMessage(); // call function
+  messageElement.innerText = getRandomMessage();             // call function
 }
 
 
