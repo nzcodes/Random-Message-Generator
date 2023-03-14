@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="./script.js"></script>
+  <title>Random msg generator</title>
+  <style>
+    @font-face {
+      font-family: "Google Sans";
+      src: url("GoogleSans-Regular_0.ttf") format("woff");
+    }
+    body {
+      background-color: #222;
+      color: #ddd;
+      font-family: "Google Sans";
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    button {
+      border-radius: 1rem;
+      background-color: #333;
+      border: none;
+      color: #ddd;
+      font-size: 1.2rem;
+      padding: 1rem 2rem;
+      margin: 1rem;
+      cursor: pointer;
+    }
+    img {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>Random message generator</h1>
+  <p id="message"></p>
+  <button onclick="displayRandomMessage()">Generate Message</button>
+</body>
+</html>
