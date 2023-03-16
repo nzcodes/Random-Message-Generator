@@ -39,3 +39,24 @@ function displayRandomMessage() {
 }
 
 
+
+// onclick event to show a picture
+function showPicture() {
+  const specificImageProbability = 0.2;
+  const specificImageURL = "gigachad.jpg";
+  const randomNumber = Math.random();
+  const imageElement = document.createElement("img");
+  if (randomNumber < specificImageProbability) {
+    imageElement.src = specificImageURL;
+    imageElement.height = "200";
+  } else {
+    imageElement.src = "https://picsum.photos/200?random=" + Math.random();
+  }
+  // Grab element to add the image
+  const containerElement = document.getElementById("image-container");
+  containerElement.innerHTML = ""; // Remove any existing image element
+  containerElement.appendChild(imageElement);
+}
+
+
+
